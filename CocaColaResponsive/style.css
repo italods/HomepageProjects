@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Popins', sans-serif;
+  font-family: "Popins", sans-serif;
 }
 
 section {
@@ -15,7 +15,7 @@ section {
   background: #161616;
 }
 
-section .circle{
+section .circle {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@ section .circle{
   background: #e51e2a;
   clip-path: circle(70% at right -20%);
 }
-header{
+header {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,17 +35,17 @@ header{
   align-items: center;
 }
 
-header .logo{
+header .logo {
   position: relative;
   max-height: 150px;
 }
 
-header .navigation{
+header .navigation {
   position: relative;
   display: flex;
 }
 
-header .navigation li{
+header .navigation li {
   list-style: none;
 }
 
@@ -63,13 +63,14 @@ header .navigation li a {
   justify-content: space-between;
   align-items: center;
 }
-.content .textBox{
+
+.content .textBox {
   position: relative;
   max-width: 600px;
   margin-right: 20px;
 }
 
-.content .textBox h2{
+.content .textBox h2 {
   color: #fff;
   font-size: 3em;
   margin-bottom: 10px;
@@ -77,13 +78,83 @@ header .navigation li a {
   font-weight: 700;
 }
 
-.content .textBox p{
+.content .textBox p {
   color: #fff;
 }
 
-.content .textBox a{
+.content .textBox a {
   display: inline-block;
   margin-top: 20px;
   padding: 8px 20px;
   background: #e51e2a;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.sci {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci li {
+  list-style: none; /* Retira os pontinhos de listagens */
+}
+
+.sci li a {
+  display: inline-block;
+  margin-left: 15px;
+  background: #222;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.sci li a:hover {
+  background: #e51e2a;
+  transform: translateY(-10px);
+}
+
+.sci li a img {
+  filter: invert(1);
+  transform: scale(0.5);
+}
+
+/*   Slider   */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.content .imgBox {
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .imgBox img{
+   max-width: 150px;
 }
